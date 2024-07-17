@@ -1,0 +1,12 @@
+- route:
+    id: route-6b0d
+    nodePrefixId: route-67a
+    from:
+      id: from-ea24
+      uri: kamelet:timer-source
+      parameters:
+        message: fads
+      steps:
+        - log:
+            id: log-988e
+            message: ${body}

@@ -1,0 +1,11 @@
+services:
+  camelk8s:
+    image: camelk8s
+    cpu_percent: 10
+    mem_limit: 1024M
+    mem_reservation: 512M
+    restart: always
+    ports:
+      - "8081:8080"
+    networks:
+      - karavan
